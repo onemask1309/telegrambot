@@ -21,7 +21,7 @@ switch ($text) {
 function sendmsg($msgID, $text)
 {
 	$url = $GLOBALS[link1].'/sendMessage?chat_id='.$msgID.'&text='.urlencode($text);
-	echo "$msgID";
+	echo $msgID;
 	file_get_contents($url);
 }
 ?>
