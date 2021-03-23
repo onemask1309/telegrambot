@@ -1,5 +1,4 @@
 <?php 
-echo "hello", "world";
 $token = "1753602376:AAGBywF5TJBBKcQdLMd9Ymhoh0B2JmmYaHI";
 $link1 = "https://api.telegram.org/bot".$token;
 
