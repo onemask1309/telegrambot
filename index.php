@@ -1,4 +1,4 @@
-<?php 
+<?php
 $token = "1753602376:AAGBywF5TJBBKcQdLMd9Ymhoh0B2JmmYaHI";
 $link1 = "https://api.telegram.org/bot".$token;
 
@@ -13,8 +13,7 @@ switch ($text) {
 	case"start":
 		sendmsg($msgID, "Welcome $name");
 		break;
-	case"love you":
-	sendmsg($msgID, "Love You Too...");
+	case"1":
 	sendmsg($msgID, "\xF0\x9F\x98\x98");
 	break;
 	
@@ -22,6 +21,7 @@ switch ($text) {
 function sendmsg($msgID, $text)
 {
 	$url = $GLOBALS[link1].'/sendMessage?chat_id='.$msgID.'&text='.urlencode($text);
+	echo "$msgID";
 	file_get_contents($url);
 }
 ?>
